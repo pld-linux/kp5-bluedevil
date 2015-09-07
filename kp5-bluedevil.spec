@@ -4,7 +4,7 @@
 Summary:	Integrate the Bluetooth technology within KDE workspace and applications
 Name:		kp5-%{kpname}
 Version:	5.4.0
-Release:	1
+Release:	2
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
@@ -64,6 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/qt5/plugins/kio_bluetooth.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kio_obexftp.so
 %dir %{_libdir}/qt5/qml/org/kde/plasma/private/bluetooth
+%{_libdir}/qt5/qml/org/kde/plasma/private/bluetooth/qmldir
 %attr(755,root,root) %{_libdir}/qt5/qml/org/kde/plasma/private/bluetooth/libbluetoothplugin.so
 %{_desktopdir}/org.kde.bluedevilsendfile.desktop
 %{_desktopdir}/org.kde.bluedevilwizard.desktop
