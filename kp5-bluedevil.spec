@@ -1,14 +1,14 @@
-%define		kdeplasmaver	5.11.2
+%define		kdeplasmaver	5.14.4
 %define		qtver		5.3.2
 %define		kpname		bluedevil
 Summary:	Integrate the Bluetooth technology within KDE workspace and applications
 Name:		kp5-%{kpname}
-Version:	5.11.2
+Version:	5.14.4
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	f56a436ba13934837442b83ad5fcfcd4
+# Source0-md5:	fe29af65a55d434bfb5a1806f7ca61b0
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 #%%attr(755,root,root) %{_libdir}/bluedevil-authorize
 #%%attr(755,root,root) %{_libdir}/bluedevil-requestconfirmation
 #%%attr(755,root,root) %{_libdir}/bluedevil-requestpin
-%attr(755,root,root) %{_libdir}/qt5/plugins/bluetoothfileitemaction.so
+#%%attr(755,root,root) %{_libdir}/qt5/plugins/bluetoothfileitemaction.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kcm_bluedeviladapters.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kcm_bluedevildevices.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kcm_bluedevilglobal.so
@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kservices5/bluedeviladapters.desktop
 %{_datadir}/kservices5/bluedevildevices.desktop
 %{_datadir}/kservices5/bluedevilglobal.desktop
-%{_datadir}/kservices5/bluedevilfileitemaction.desktop
+#%%{_datadir}/kservices5/bluedevilfileitemaction.desktop
 #%%{_datadir}/kservices5/bluedevilsendfile.desktop
 %{_datadir}/kservices5/bluetooth.protocol
 %{_datadir}/kservices5/obexftp.protocol
