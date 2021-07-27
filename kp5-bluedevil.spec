@@ -1,14 +1,14 @@
-%define		kdeplasmaver	5.22.3
+%define		kdeplasmaver	5.22.4
 %define		qtver		5.9.0
 %define		kpname		bluedevil
 Summary:	Integrate the Bluetooth technology within KDE workspace and applications
 Name:		kp5-%{kpname}
-Version:	5.22.3
+Version:	5.22.4
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	2470696d3b759f5868b7fd00c4a8edda
+# Source0-md5:	3d7abfe0952b356cc12cbd75be14f5e0
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
@@ -67,7 +67,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/knotifications5/bluedevil.notifyrc
 %{_datadir}/kservices5/bluetooth.protocol
 %{_datadir}/kservices5/obexftp.protocol
-%{_datadir}/kservices5/plasma-applet-org.kde.plasma.bluetooth.desktop
 %{_datadir}/mime/packages/bluedevil-mime.xml
 %{_datadir}/plasma/plasmoids/org.kde.plasma.bluetooth
 %{_datadir}/remoteview/bluetooth-network.desktop
