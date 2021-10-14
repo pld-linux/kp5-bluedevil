@@ -1,14 +1,14 @@
-%define		kdeplasmaver	5.22.5
+%define		kdeplasmaver	5.23.0
 %define		qtver		5.9.0
 %define		kpname		bluedevil
 Summary:	Integrate the Bluetooth technology within KDE workspace and applications
 Name:		kp5-%{kpname}
-Version:	5.22.5
+Version:	5.23.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	020ee04c4acc639616f166697d835640
+# Source0-md5:	009a0b47081dd781dfddbc0a0c6ac7ee
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
@@ -55,8 +55,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/bluedevil-sendfile
 %attr(755,root,root) %{_bindir}/bluedevil-wizard
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/kded/bluedevil.so
-%attr(755,root,root) %{_libdir}/qt5/plugins/kio_bluetooth.so
-%attr(755,root,root) %{_libdir}/qt5/plugins/kio_obexftp.so
+%attr(755,root,root) %{_libdir}/qt5/plugins/kf5/kio/kio_bluetooth.so
+%attr(755,root,root) %{_libdir}/qt5/plugins/kf5/kio/kio_obexftp.so
 %dir %{_libdir}/qt5/qml/org/kde/plasma/private/bluetooth
 %{_libdir}/qt5/qml/org/kde/plasma/private/bluetooth/qmldir
 %attr(755,root,root) %{_libdir}/qt5/qml/org/kde/plasma/private/bluetooth/libbluetoothplugin.so
@@ -65,8 +65,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/bluedevilwizard
 %{_datadir}/bluedevilwizard/pin-code-database.xml
 %{_datadir}/knotifications5/bluedevil.notifyrc
-%{_datadir}/kservices5/bluetooth.protocol
-%{_datadir}/kservices5/obexftp.protocol
 %{_datadir}/mime/packages/bluedevil-mime.xml
 %{_datadir}/plasma/plasmoids/org.kde.plasma.bluetooth
 %{_datadir}/remoteview/bluetooth-network.desktop
