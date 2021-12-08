@@ -16,7 +16,14 @@ BuildRequires:	Qt5Widgets-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
 BuildRequires:	kf5-bluez-qt-devel
 BuildRequires:	kf5-extra-cmake-modules >= 1.4.0
+BuildRequires:	kf5-kdbusaddons-devel
+BuildRequires:	kf5-kdeclarative-devel
 BuildRequires:	kf5-kded-devel
+BuildRequires:	kf5-kio-devel
+BuildRequires:	kf5-knotifications-devel
+BuildRequires:	kf5-kwidgetsaddons-devel
+BuildRequires:	kf5-kwindowsystem-devel
+BuildRequires:	kf5-plasma-framework-devel
 BuildRequires:	ninja
 BuildRequires:	qt5-build >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.164
