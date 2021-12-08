@@ -11,6 +11,7 @@ Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{versi
 # Source0-md5:	129d38e7781b6b8de4228d5798a43cfb
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
+BuildRequires:	Qt5Widgets-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
 BuildRequires:	kf5-bluez-qt-devel
 BuildRequires:	kf5-extra-cmake-modules >= 1.4.0
