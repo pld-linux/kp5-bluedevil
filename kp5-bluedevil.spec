@@ -1,14 +1,14 @@
-%define		kdeplasmaver	5.23.5
+%define		kdeplasmaver	5.24.0
 %define		qtver		5.9.0
 %define		kpname		bluedevil
 Summary:	Integrate the Bluetooth technology within KDE workspace and applications
 Name:		kp5-%{kpname}
-Version:	5.23.5
+Version:	5.24.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	26e155043cc82db89324b914cc205ce3
+# Source0-md5:	6b7e9f27503c829924048bf65a0c4763
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Quick-devel >= %{qtver}
@@ -80,14 +80,13 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/plasma/plasmoids/org.kde.plasma.bluetooth
 %{_datadir}/remoteview/bluetooth-network.desktop
 %{_datadir}/metainfo/org.kde.plasma.bluetooth.appdata.xml
-%{_libdir}/qt5/plugins/kcms/kcm_bluetooth.so
 %dir %{_datadir}/kpackage/kcms/kcm_bluetooth
 %dir %{_datadir}/kpackage/kcms/kcm_bluetooth/contents
 %dir %{_datadir}/kpackage/kcms/kcm_bluetooth/contents/ui
-%{_datadir}/kpackage/kcms/kcm_bluetooth/contents/ui/Bluetooth.qml
 %{_datadir}/kpackage/kcms/kcm_bluetooth/contents/ui/Device.qml
 %{_datadir}/kpackage/kcms/kcm_bluetooth/contents/ui/General.qml
-%{_datadir}/kpackage/kcms/kcm_bluetooth/metadata.desktop
-%{_datadir}/kpackage/kcms/kcm_bluetooth/metadata.json
-%{_datadir}/kservices5/bluetooth.desktop
 %{_datadir}/kservices5/plasma-applet-org.kde.plasma.bluetooth.desktop
+%{_libdir}/qt5/plugins/plasma/kcms/systemsettings/kcm_bluetooth.so
+%{_desktopdir}/kcm_bluetooth.desktop
+%{_datadir}/kpackage/kcms/kcm_bluetooth/contents/ui/main.qml
+%{_datadir}/qlogging-categories5/bluedevil.categories
