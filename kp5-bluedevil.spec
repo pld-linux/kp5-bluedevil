@@ -23,6 +23,7 @@ BuildRequires:	kf5-kconfigwidgets-devel
 BuildRequires:	kf5-kdbusaddons-devel
 BuildRequires:	kf5-kdeclarative-devel
 BuildRequires:	kf5-kded-devel
+BuildRequires:	kf5-ki18n-devel
 BuildRequires:	kf5-kio-devel
 BuildRequires:	kf5-kirigami2-devel
 BuildRequires:	kf5-knotifications-devel
