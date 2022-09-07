@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	5.25.4
+%define		kdeplasmaver	5.25.5
 %define		qtver		5.15.2
 %define		kpname		bluedevil
 Summary:	Integrate the Bluetooth technology within KDE workspace and applications
 Name:		kp5-%{kpname}
-Version:	5.25.4
+Version:	5.25.5
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	a6c95ad969503a0c4f7fa61b457405c1
+# Source0-md5:	9647361921420e872b29f2a25d99020e
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Quick-devel >= %{qtver}
